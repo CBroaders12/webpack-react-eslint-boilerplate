@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './app.component.css';
 
-function App() {
-  return <h1>React and Webpack 4Ever!</h1>;
-}
+const App = () => {
+  return <h1 className={styles.app}>React and Webpack 4Ever!</h1>;
+};
 
 export default App;
