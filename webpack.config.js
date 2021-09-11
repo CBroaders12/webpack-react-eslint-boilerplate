@@ -9,21 +9,21 @@ module.exports = {
     publicPath: '/dist',
   },
   module: {
-		rules: [
-			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader',
-			},
-		],
-	},
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
   resolve: {
     extensions: ['.js', 'jsx'],
   },
   devServer: {
-		static: {
-			directory: path.join(__dirname, 'public/'),
-		},
-		port: 3000
-	},
-}
+    static: {
+      directory: path.join(__dirname, 'public/'),
+    },
+    port: 3000,
+  },
+};
