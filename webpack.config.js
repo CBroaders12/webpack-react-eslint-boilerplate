@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -30,7 +30,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', 'jsx'],
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     static: {
